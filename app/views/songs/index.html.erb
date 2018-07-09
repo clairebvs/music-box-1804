@@ -1,6 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+
 <h1>All Songs</h1>
 
-<% @songs.each do |song| %>
-  <h2><%=song.title%></h2>
-  <p>Plays: <%=song.play_count%></p>
-<%end%>
+<section class="square_song">
+    <% @songs.each do |song| %>
+    <div class="element_song">
+      <ul>
+        <img src="https://blog.thrifter.com/sites/thrifter.com/files/styles/w400h400crop/public/apple-music.jpg?itok=tWPtJy84"
+        alt="music-image">
+        <p><%= song.title %></p>
+        <p><%= song.length %></p>
+        <p><%= song.play_count %></p>
+      </ul>
+      </div>
+    <% end %>
+</section>
+
+  </body>
+</html>
