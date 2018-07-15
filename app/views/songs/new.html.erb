@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" href="main.css">
+  </head>
+  <body>
+
+<h1>Create A New Song</h1>
+
+<div class='form_box'>
+<%= form_for [@artist, @song] do |f| %>
+  <div class="title">
+    <%= f.label :title %>
+    <div class="title_box">
+      <%= f.text_field :title %>
+    </div>
+  </div>
+  <div class='length_box'>
+    <%= f.label :length %>
+    <%= f.text_field :length %>
+  </div>
+  <div class="play_box">
+    <%= f.label :play_count %>
+    <%= f.text_field :play_count %>
+  </div>
+  <div class="submit_box">
+    <%= f.submit %>
+  </div>
+<% end %>
+</div>
+
+
+
+</body>
+</html>

@@ -1,33 +1,39 @@
 h1 {
   text-align: center;
-  font-family: 'Times New Roman';
-  font-style: italic;
-  font-size: 40px;
-  padding: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.form_box {
+
+}
+
+.title_box {
+  text-align: center;
+  width: 20%;
+}
+
+.title {
+  text-align: center;
+}
+
+.length_box {
+  text-align: center;
+  display: grid;
+  grid-column: auto;
+}
+
+.play_box {
+  text-align: center;
+}
+
+.submit_box {
+
 }
 
 body {
-  background-color: #80ff80;
+  background-image: url("/assets/cassette.jpg");
+  background-size: cover;
   margin: 40px;
-}
-
-img {
-  width: 50px;
-  border-radius: 15px 50px 30px;
-}
-
-.square_song {
-  font-family: 'Helvetica', cursive;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  height: 100%;
-  padding: 20px;
-  font-size: 80%;
-}
-
-.element_song {
-  background-color: #e0e0eb;
-  text-align: center;
-  border-radius: 15px 50px 30px;
 }
