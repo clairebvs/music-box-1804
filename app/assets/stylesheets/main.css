@@ -5,31 +5,48 @@ h1 {
   padding: 10px;
 }
 
-.form_box {
-
+.new_song {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.title_box {
-  text-align: center;
+#song_title {
+  border-radius: 5px;
+  padding: 5px;
   width: 20%;
+  margin: 10px;
 }
 
-.title {
-  text-align: center;
+#song_length {
+  border-radius: 5px;
+  padding: 5px;
+  width: 20%;
+  margin: 10px;
 }
 
-.length_box {
-  text-align: center;
-  display: grid;
-  grid-column: auto;
+#song_play_count {
+  border-radius: 5px;
+  padding: 5px;
+  width: 20%;
+  margin: 10px;
 }
 
-.play_box {
-  text-align: center;
+label {
+  font-family: 'Raleway', sans-serif;
 }
 
-.submit_box {
+input[type="submit"] {
+  background: blue;
+  border-spacing: 20px;
+  width: 20%;
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 25px;
+}
 
+input[value="Create Song"] {
+  color: white;
 }
 
 body {
