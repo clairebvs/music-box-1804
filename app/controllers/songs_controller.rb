@@ -5,6 +5,10 @@ class SongsController < ApplicationController
     @cart = Cart.new(session[:cart])
   end
 
+  def show
+    @song = Song.find_by(slug: params[:id])
+  end
+
   def new
     @artist = Artist.find(params[:artist_id])
     @song = Song.new
