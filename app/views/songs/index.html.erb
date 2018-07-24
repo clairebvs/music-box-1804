@@ -17,9 +17,10 @@
         <div class="song-items">
           <ul>
             <li><img src="/assets/vinyl.jpg" alt="record"></li>
-            <li><%= song.title %></li>
+            <li><%= song.title %> </li>
             <li><%= song.length %> seconds</li>
             <li>Play Count: <%= song.play_count %></li>
+            <p> <%= button_to 'Add Song', carts_path(song_id: song.id), class: 'btn btn-danger' %></p>
           </ul>
         </div>
         <% end %>
